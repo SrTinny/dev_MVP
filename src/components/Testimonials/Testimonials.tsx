@@ -13,14 +13,14 @@ function Testimonials() {
       name: "Carlos Mendes",
       company: "E-commerce Solutions",
       role: "Diretor de Operações",
-      text: "Profissionalismo do início ao fim. A DevHub entendeu nossa visão e criou uma plataforma que realmente vende.",
+      text: "Profissionalismo do início ao fim. A Dev MVP entendeu nossa visão e criou uma plataforma que realmente vende.",
       rating: 5,
     },
     {
       name: "Mariana Costa",
       company: "Agência de Design",
       role: "Gestora de Projetos",
-      text: "Já trabalho com muita gente, mas a DevHub se destaca pela comunicação, qualidade técnica e pós-venda impecável.",
+      text: "Já trabalho com muita gente, mas a Dev MVP se destaca pela comunicação, qualidade técnica e pós-venda impecável.",
       rating: 5,
     },
   ];

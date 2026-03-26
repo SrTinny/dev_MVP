@@ -56,12 +56,12 @@
 
 @keyframes rotateHub {
   0%, 100% {
-    background: linear-gradient(135deg, #0080FF, #9D00FF);
-    box-shadow: 0 4px 15px rgba(0, 128, 255, 0.3);
+    background: linear-gradient(135deg, #42A5F5, #42A5F5);
+    box-shadow: 0 4px 15px rgba(66, 165, 245, 0.3);
   }
   50% {
-    background: linear-gradient(315deg, #0080FF, #9D00FF);
-    box-shadow: 0 4px 15px rgba(157, 0, 255, 0.3);
+    background: linear-gradient(315deg, #42A5F5, #42A5F5);
+    box-shadow: 0 4px 15px rgba(66, 165, 245, 0.3);
   }
 }
 

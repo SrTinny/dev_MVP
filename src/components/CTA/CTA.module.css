@@ -1,8 +1,8 @@
 .cta_section {
   padding: var(--space-3xl) var(--space-lg);
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.1) 0%, rgba(157, 0, 255, 0.1) 100%);
-  border-top: 1px solid rgba(0, 128, 255, 0.2);
-  border-bottom: 1px solid rgba(0, 128, 255, 0.2);
+  background: linear-gradient(135deg, rgba(66, 165, 245, 0.1) 0%, rgba(66, 165, 245, 0.1) 100%);
+  border-top: 1px solid rgba(66, 165, 245, 0.2);
+  border-bottom: 1px solid rgba(66, 165, 245, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -14,7 +14,7 @@
   right: -20%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(0, 128, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(66, 165, 245, 0.1) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -55,7 +55,7 @@
   padding: var(--space-xl);
   background: rgba(34, 38, 43, 0.5);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(0, 128, 255, 0.2);
+  border: 1px solid rgba(66, 165, 245, 0.2);
 }
 
 .feature {

@@ -54,13 +54,13 @@
   transition: all var(--duration-base) var(--easing-ease);
   border: 1px solid rgba(0, 128, 255, 0.2);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.08), rgba(157, 0, 255, 0.08));
+  background: linear-gradient(135deg, rgba(66, 165, 245, 0.08), rgba(66, 165, 245, 0.08));
 }
 
 .projectCard:hover,
 .projectCard:focus-visible {
   border-color: var(--primary);
-  box-shadow: 0 14px 32px rgba(0, 128, 255, 0.25);
+  box-shadow: 0 14px 32px rgba(66, 165, 245, 0.25);
 }
 
 .projectCard:focus-visible {
@@ -86,9 +86,9 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(0, 128, 255, 0.35), transparent 45%),
-    radial-gradient(circle at 80% 30%, rgba(157, 0, 255, 0.35), transparent 42%),
-    linear-gradient(135deg, #0a1f3a 0%, #112d4e 50%, #163a5f 100%);
+    radial-gradient(circle at 20% 20%, rgba(66, 165, 245, 0.35), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(66, 165, 245, 0.35), transparent 42%),
+    linear-gradient(135deg, #1565C0 0%, #42A5F5 50%, #90CAF9 100%);
   transition: transform 0.6s ease-in-out;
 }
 
@@ -168,6 +168,7 @@
   color: var(--text-light);
   display: -webkit-box;
   -webkit-line-clamp: 5;
+  line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

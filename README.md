@@ -1,4 +1,4 @@
-# Devhub
+# Dev MVP
 
 Projeto web desenvolvido com React, TypeScript e Vite, focado em apresentar serviços, portfólio e informações de contato de forma moderna e responsiva, utilizando componentes reutilizáveis e estilização com CSS Modules.
 

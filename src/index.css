@@ -2,14 +2,19 @@
 
 :root {
   /* ==================== CORES ==================== */
-  /* Gradiente principal: Azul Vibrante → Roxo Intenso */
-  --gradient-start: #0080FF;
-  --gradient-end: #9D00FF;
+  /* Gradiente principal: Azul Claro → Azul Claro */
+  --gradient-start: #42A5F5;
+  --gradient-end: #42A5F5;
   --gradient: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-  
+
   /* Cores principais */
-  --primary: #0080FF;
-  --primary-hover: #9D00FF;
+  --primary: #42A5F5;
+  --primary-hover: #1976D2;
+
+  /* Cores secundárias */
+  --secondary-red: #EF5350;
+  --secondary-orange: #FFB74D;
+  --secondary-green: #81C784;
   
   /* Backgrounds */
   --bg: #22262B;

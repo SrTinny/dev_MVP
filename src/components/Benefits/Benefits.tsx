@@ -67,7 +67,7 @@ function Benefits() {
     <section className={styles.benefits} id="beneficios">
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2>Por que <span>escolher a DevHub</span></h2>
+          <h2>Por que <span>escolher Dev MVP</span></h2>
           <p>Combinamos tecnologia de ponta com estratégia de negócio para gerar resultados reais</p>
         </div>
 
