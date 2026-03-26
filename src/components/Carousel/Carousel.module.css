@@ -18,10 +18,7 @@
 }
 
 .titulo span {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   display: inline-block;
   font-weight: var(--fw-bold);
 }
@@ -52,14 +49,14 @@
   position: relative;
   cursor: pointer;
   transition: all var(--duration-base) var(--easing-ease);
-  border: 1px solid rgba(0, 128, 255, 0.2);
+  border: 1px solid var(--primary);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(135deg, rgba(66, 165, 245, 0.08), rgba(66, 165, 245, 0.08));
+  background: var(--card-bg);
 }
 
 .projectCard:hover,
 .projectCard:focus-visible {
-  border-color: var(--primary);
+  border-color: var(--primary-hover);
   box-shadow: 0 14px 32px rgba(66, 165, 245, 0.25);
 }
 
@@ -85,10 +82,7 @@
 .projectImageFallback {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(66, 165, 245, 0.35), transparent 45%),
-    radial-gradient(circle at 80% 30%, rgba(66, 165, 245, 0.35), transparent 42%),
-    linear-gradient(135deg, #1565C0 0%, #42A5F5 50%, #90CAF9 100%);
+  background: var(--card-bg-hover);
   transition: transform 0.6s ease-in-out;
 }
 

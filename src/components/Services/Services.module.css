@@ -16,10 +16,7 @@
 }
 
 .header h2 span {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   display: inline-block;
   font-weight: var(--fw-bold);
 }
@@ -44,9 +41,9 @@
 }
 
 .card {
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.1) 0%, rgba(157, 0, 255, 0.08) 100%);
+  background: var(--card-bg);
   padding: var(--space-xl);
-  border: 1px solid rgba(0, 128, 255, 0.2);
+  border: 1px solid var(--primary);
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -55,9 +52,9 @@
 
 .card:hover {
   transform: translateY(-8px);
-  border-color: var(--primary);
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.1) 0%, rgba(157, 0, 255, 0.1) 100%);
-  box-shadow: 0 15px 35px rgba(0, 128, 255, 0.15);
+  border-color: var(--primary-hover);
+  background: var(--card-bg-hover);
+  box-shadow: 0 15px 35px rgba(66, 165, 245, 0.15);
 }
 
 .icon {
@@ -85,10 +82,7 @@
 .card h3 {
   font-size: var(--text-2xl);
   margin-bottom: var(--space-md);
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   height: auto;
   display: block;
 }
@@ -104,8 +98,8 @@
   display: inline-block;
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(0, 128, 255, 0.35);
-  background: rgba(0, 128, 255, 0.12);
+  border: 1px solid var(--primary);
+  background: var(--card-bg-hover);
   color: var(--text-light);
   text-decoration: none;
   font-weight: var(--fw-semibold);
@@ -114,8 +108,8 @@
 
 .cardLink:hover {
   color: var(--text);
-  border-color: var(--primary);
-  background: rgba(0, 128, 255, 0.22);
+  border-color: var(--primary-hover);
+  background: var(--primary);
 }
 
 @media (min-width: 768px) {

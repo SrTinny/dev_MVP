@@ -23,10 +23,7 @@
 }
 
 .header h2 span {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   display: inline-block;
   font-weight: var(--fw-bold);
 }
@@ -47,8 +44,8 @@
 
 .card {
   padding: var(--space-xl);
-  background: linear-gradient(135deg, rgba(66, 165, 245, 0.1) 0%, rgba(66, 165, 245, 0.08) 100%);
-  border: 1px solid rgba(66, 165, 245, 0.2);
+  background: var(--card-bg);
+  border: 1px solid var(--primary);
   border-radius: var(--radius-lg);
   text-align: center;
   transition: all var(--duration-base) var(--easing-ease);
@@ -64,10 +61,10 @@
 .card:nth-child(6) { animation-delay: 0.55s; }
 
 .card:hover {
-  border-color: var(--primary);
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.1) 0%, rgba(157, 0, 255, 0.1) 100%);
+  border-color: var(--primary-hover);
+  background: var(--card-bg-hover);
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 128, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(66, 165, 245, 0.15);
 }
 
 .icon {
