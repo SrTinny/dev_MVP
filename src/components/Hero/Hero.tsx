@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
-import programadorImage from "../../assets/programador.jpg";
+
+import LogoHero from "./LogoHero";
 
 function Hero() {
   return (
@@ -62,11 +63,7 @@ function Hero() {
         </div>
 
         <div className={styles.visual}>
-          <img 
-            src={programadorImage}
-            alt="Desenvolvedor trabalhando com código" 
-            className={styles.programador_image}
-          />
+          <LogoHero />
         </div>
       </div>
     </section>

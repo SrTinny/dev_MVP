@@ -7,7 +7,7 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.brand}>
-          <h3>DevHub</h3>
+          <h3>Dev MVP</h3>
           <p>
             Desenvolvimento web focado em performance, conversao e crescimento
             para o seu negocio.
@@ -29,7 +29,7 @@ function Footer() {
       </div>
 
       <div className={styles.bottom}>
-        <p>&copy; {currentYear} DevHub. Todos os direitos reservados.</p>
+        <p>&copy; {currentYear} Dev MVP. Todos os direitos reservados.</p>
         <a href="#" className={styles.backToTop}>
           Voltar ao topo
         </a>

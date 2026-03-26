@@ -47,8 +47,8 @@
 
 .card {
   padding: var(--space-xl);
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.1) 0%, rgba(157, 0, 255, 0.08) 100%);
-  border: 1px solid rgba(0, 128, 255, 0.2);
+  background: linear-gradient(135deg, rgba(66, 165, 245, 0.1) 0%, rgba(66, 165, 245, 0.08) 100%);
+  border: 1px solid rgba(66, 165, 245, 0.2);
   border-radius: var(--radius-lg);
   text-align: center;
   transition: all var(--duration-base) var(--easing-ease);

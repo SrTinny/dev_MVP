@@ -1,0 +1,48 @@
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  height: 36px;
+}
+
+.blue {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 2px 8px rgba(66, 165, 245, 0.15);
+  transition: box-shadow 0.3s;
+}
+
+.red, .orange, .green {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-left: -4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+  position: relative;
+  top: -5px;
+}
+
+.red {
+  background: var(--secondary-red);
+}
+.orange {
+  background: var(--secondary-orange);
+}
+.green {
+  background: var(--secondary-green);
+}
+
+.bounce {
+  animation: bounce 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-10px) scale(1.08); }
+  60% { transform: translateY(0) scale(0.96); }
+  100% { transform: translateY(0) scale(1); }
+}

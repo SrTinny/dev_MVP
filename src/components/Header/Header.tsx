@@ -8,9 +8,11 @@ import {
   FiGrid,
 } from "react-icons/fi";
 
+
 import styles from "./Header.module.css";
 import Modal from "../Modal/Modal";
 import ContactForm from "../ContactForm/ContactForm";
+import LogoAnimated from "./LogoAnimated";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +24,8 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <a href="#">
-          <h1>
-            Dev<span className={styles.logoFlip}>hub</span>
-          </h1>
+        <a href="#" aria-label="Dev Hub Home">
+          <LogoAnimated />
         </a>
       </div>
 
