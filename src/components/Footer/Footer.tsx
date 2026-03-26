@@ -24,7 +24,7 @@ function Footer() {
         </nav>
 
         <a href="#contato" className={styles.cta}>
-          Solicitar orcamento
+          Entre em Contato
         </a>
       </div>
 
