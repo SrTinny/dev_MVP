@@ -2,7 +2,7 @@
   display: block;
   padding: var(--space-3xl) var(--space-lg);
   color: var(--text);
-  background: linear-gradient(135deg, var(--bg) 0%, rgba(0, 128, 255, 0.05) 100%);
+  background: linear-gradient(135deg, var(--bg) 0%, rgba(66, 165, 245, 0.07) 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -56,16 +56,30 @@
   gap: var(--space-lg);
   margin-bottom: var(--space-2xl);
   padding: var(--space-xl);
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.08) 0%, rgba(157, 0, 255, 0.05) 100%);
-  border: 1px solid rgba(0, 128, 255, 0.2);
+  background: linear-gradient(135deg, rgba(66, 165, 245, 0.08) 0%, rgba(129, 199, 132, 0.07) 100%);
+  border: 1px solid rgba(66, 165, 245, 0.18);
   border-radius: var(--radius-lg);
 }
+
 
 .highlight_item {
   display: flex;
   align-items: center;
   gap: var(--space-md);
   font-weight: var(--fw-semibold);
+}
+
+.highlight_item:nth-child(1) svg {
+  color: var(--secondary-red);
+}
+.highlight_item:nth-child(2) svg {
+  color: var(--secondary-orange);
+}
+.highlight_item:nth-child(3) svg {
+  color: var(--secondary-green);
+}
+.highlight_item:nth-child(4) svg {
+  color: var(--primary);
 }
 
 .highlight_item svg {
@@ -94,10 +108,11 @@
   width: fit-content;
 }
 
+
 .cta_primary {
   background: var(--gradient);
   color: var(--text);
-  box-shadow: 0 4px 15px rgba(0, 128, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(66, 165, 245, 0.22);
   position: relative;
   overflow: hidden;
 }
@@ -113,14 +128,17 @@
   transition: left var(--duration-base) var(--easing-ease);
 }
 
+
 .cta_primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 128, 255, 0.5);
+  box-shadow: 0 8px 25px rgba(66, 165, 245, 0.35);
+  color: var(--text);
 }
 
 .cta_primary:hover::before {
   left: 100%;
 }
+
 
 .cta_secondary {
   background: transparent;
@@ -128,6 +146,7 @@
   border: 2px solid var(--primary);
   transition: all var(--duration-base) var(--easing-ease);
 }
+
 
 .cta_secondary:hover {
   background: var(--primary);
@@ -151,13 +170,14 @@
   animation-delay: 0.4s;
 }
 
+
 .programador_image {
   width: 100%;
   height: auto;
   border-radius: var(--radius-lg);
   object-fit: cover;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(0, 128, 255, 0.2);
+  box-shadow: 0 20px 60px rgba(66, 165, 245, 0.10);
+  border: 1px solid rgba(66, 165, 245, 0.18);
   transition: all var(--duration-base) var(--easing-ease);
 }
 
