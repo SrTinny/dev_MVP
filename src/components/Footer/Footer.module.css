@@ -1,7 +1,7 @@
 ﻿.footer {
   padding: var(--space-2xl) var(--space-lg);
-  background: linear-gradient(180deg, rgba(34, 38, 43, 0.9) 0%, rgba(26, 29, 33, 0.98) 100%);
-  border-top: 1px solid rgba(0, 128, 255, 0.2);
+  background: var(--bg);
+  border-top: 1px solid var(--primary);
   color: var(--text-light);
   position: relative;
   overflow: hidden;
@@ -44,10 +44,7 @@
 .brand h3 {
   font-size: var(--text-2xl);
   margin-bottom: var(--space-sm);
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   display: inline-block;
 }
 
@@ -80,17 +77,18 @@
   align-self: start;
   padding: var(--space-md) var(--space-lg);
   border-radius: var(--radius-md);
-  background: var(--gradient);
+  background: var(--primary);
   color: var(--text);
   text-decoration: none;
   font-weight: var(--fw-semibold);
   transition: transform var(--duration-base) var(--easing-ease), box-shadow var(--duration-base) var(--easing-ease);
-  box-shadow: 0 8px 20px rgba(0, 128, 255, 0.25);
+  box-shadow: 0 8px 20px rgba(66, 165, 245, 0.25);
 }
 
 .cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 26px rgba(0, 128, 255, 0.35);
+  color: var(--text) !important;
 }
 
 .bottom {

@@ -10,10 +10,7 @@
 }
 
 .contact h2 span {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   display: inline-block;
   font-weight: var(--fw-bold);
 }
@@ -27,7 +24,7 @@ form {
 }
 
 .submitForm {
-  background: var(--gradient);
+  background: var(--primary);
   color: var(--text);
   padding: var(--space-md) var(--space-lg);
   border: none;

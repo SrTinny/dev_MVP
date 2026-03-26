@@ -1,6 +1,6 @@
 .process {
   padding: var(--space-3xl) var(--space-lg);
-  background: linear-gradient(135deg, var(--bg) 0%, rgba(157, 0, 255, 0.03) 100%);
+  background: var(--bg);
 }
 
 .container {
@@ -19,10 +19,7 @@
 }
 
 .header h2 span {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   display: inline-block;
   font-weight: var(--fw-bold);
 }
@@ -46,7 +43,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 100%;
-  background: linear-gradient(180deg, var(--primary), var(--primary-hover), transparent);
+  background: var(--primary);
 }
 
 .step {
@@ -84,8 +81,8 @@
 .step_content {
   width: 50%;
   padding: var(--space-xl);
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.1) 0%, rgba(157, 0, 255, 0.08) 100%);
-  border: 1px solid rgba(0, 128, 255, 0.2);
+  background: var(--card-bg);
+  border: 1px solid var(--primary);
   border-radius: var(--radius-lg);
   position: relative;
 }
@@ -95,12 +92,12 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background: var(--gradient);
+  background: var(--primary);
   border: 3px solid var(--bg);
   border-radius: 50%;
   top: 30px;
   left: -55px;
-  box-shadow: 0 0 0 6px rgba(0, 128, 255, 0.1);
+  box-shadow: 0 0 0 6px rgba(66, 165, 245, 0.1);
 }
 
 .step:nth-child(even) .step_content::before {
@@ -111,10 +108,7 @@
 .number {
   font-size: 2.5rem;
   font-weight: var(--fw-bold);
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   margin-bottom: var(--space-md);
 }
 
