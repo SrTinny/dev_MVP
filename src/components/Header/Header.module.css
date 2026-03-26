@@ -145,7 +145,7 @@
   left: -100%;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, rgba(0, 128, 255, 0.95), rgba(157, 0, 255, 0.95));
+  background: rgba(66, 165, 245, 0.97);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: var(--space-xl);

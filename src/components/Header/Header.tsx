@@ -8,15 +8,11 @@ import {
   FiGrid,
 } from "react-icons/fi";
 
-
 import styles from "./Header.module.css";
-import Modal from "../Modal/Modal";
-import ContactForm from "../ContactForm/ContactForm";
 import LogoAnimated from "./LogoAnimated";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -48,13 +44,6 @@ function Header() {
         <a href="#contato">
           <FiPhone /> Contato
         </a>
-        <button
-          type="button"
-          className={styles.cta}
-          onClick={() => setIsQuoteOpen(true)}
-        >
-          Solicitar orçamento
-        </button>
       </nav>
 
       <button
@@ -66,7 +55,11 @@ function Header() {
         <FiMenu />
       </button>
 
-      <div className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`} role="navigation" aria-label="Menu mobile">
+      <div
+        className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}
+        role="navigation"
+        aria-label="Menu mobile"
+      >
         <button
           className={styles.closeButton}
           onClick={closeMenu}
@@ -93,22 +86,9 @@ function Header() {
         <a href="#contato" onClick={closeMenu}>
           <FiPhone /> Contato
         </a>
-        <button
-          className={styles.cta}
-          onClick={() => {
-            setIsQuoteOpen(true);
-            closeMenu();
-          }}
-        >
-          Solicitar orçamento
-        </button>
       </div>
 
       {isOpen && <div className={styles.overlay} onClick={closeMenu}></div>}
-
-      <Modal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)}>
-        <ContactForm />
-      </Modal>
     </header>
   );
 }
